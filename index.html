@@ -4,58 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random User</title>
-
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="block black-bg"></div>
     <div class="block">
       <div class="container">
         <!-- Person Image -->
-        <img src="./desktop-wallpaper-demon-slayer-manga-computer-demon-slayer.jpg" alt="" />
+        <img class="img" src="" alt="" />
         <div class="back-img-line"></div>
 
         <!-- Name -->
-        <p>My name is</p>
-        <h1>John Smith</h1>
+        <p class="title">My name is</p>
+        <h1 class="value">John Smith</h1>
+        
         <div class="icons">
           <!-- Contact icon -->
-          <button data-label="user">
+          <button class="icon active" data-label="name">
             <i class="ri-user-line"></i>
           </button>
 
           <!-- Email icon -->
-          <button data-label="email">
+          <button class="icon" data-label="email">
             <i class="ri-mail-line"></i>
           </button>
 
           <!-- Age icon -->
-          <button data-label="age">
+          <button class="icon" data-label="age">
             <i class="ri-calendar-line"></i>
           </button>
 
           <!-- Map icon -->
-          <button data-label="map">
+          <button class="icon" data-label="street">
             <i class="ri-map-2-line"></i>
           </button>
 
           <!-- Contact icon -->
-          <button data-label="contact">
+          <button class="icon" data-label="phone">
             <i class="ri-phone-line"></i>
           </button>
 
           <!-- Password Icon -->
-          <button data-label="password">
+          <button class="icon" data-label="password">
             <i class="ri-shield-keyhole-line"></i>
           </button>
         </div>
         <button class="random-user">Random User</button>
       </div>
     </div>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
